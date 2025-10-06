@@ -1,0 +1,13 @@
+Import-Csv "MarketingUsers.csv" | ForEach-Object {
+    $OUPath = "OU=$($_.OU),OU=Finance,DC=bishtest,DC=test"
+    $UserPrincipalName = "$($_.Username)@bishtest.test"
+    New-ADUser `
+        -Name "$($_.FirstName) $($_.LastName)" `
+        -GivenName $_.FirstName `
+        -Surname $_.LastName `
+        -SamAccountName $_.Username `
+        -UserPrincipalName $UserPrincipalName `
+        -AccountPassword (ConvertTo-SecureString $_.Password -AsPlainText -Force) `
+        -Path $OUPath `
+        -Enabled $true
+}
