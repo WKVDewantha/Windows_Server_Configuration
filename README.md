@@ -115,7 +115,6 @@ Kavitha	Rajendran	krajendran	P@ssw0rd!	Users
 Suresh	Chandran	schandran	P@ssw0rd!	Users
 Meena	Pathmanathan	mpathmanathan	P@ssw0rd!	Users
 Arjun	Sivarajah	asivarajah	P@ssw0rd!	Users
-<img width="401" height="505" alt="image" src="https://github.com/user-attachments/assets/76b48770-ab9e-4ed8-9db4-df148472b16b" />
 
 ```
 
