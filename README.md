@@ -94,9 +94,29 @@ Before following this tutorial, note these critical corrections:
 Create a CSV file named `SalesUsers.csv` in `C:\Exam\` with this format:
 
 ```csv
-FirstName,LastName,Username,Password
-John,Doe,jdoe,P@ssw0rd123
-Jane,Smith,jsmith,P@ssw0rd456
+FirstName	LastName	Username	Password	OU
+Dinusha	Perera	dperera	P@ssw0rd!	Users
+Priyantha	Fernando	pfernando	P@ssw0rd!	Users
+Lakshitha	Silva	lsilva	P@ssw0rd!	Users
+Chaminda	Bandara	cbandara	P@ssw0rd!	Users
+Anjali	Rathnayake	arathnayake	P@ssw0rd!	Users
+Sandun	Weerasinghe	sweerasinghe	P@ssw0rd!	Users
+Niroshan	Fonseka	nfonseka	P@ssw0rd!	Users
+Tharindu	Jayawardena	tjayawardena	P@ssw0rd!	Users
+Dulari	Wickramasinghe	dwickramasinghe	P@ssw0rd!	Users
+Kasun	Rajapaksa	krajapaksa	P@ssw0rd!	Users
+Shamila	Gunawardena	sgunawardena	P@ssw0rd!	Users
+Isuru	Zoysa	izoysa	P@ssw0rd!	Users
+Sithara	Abeywickrama	sabeywickrama	P@ssw0rd!	Users
+Ruwan	Dissanayake	rdissanayake	P@ssw0rd!	Users
+Maheshi	Peiris	mpeiris	P@ssw0rd!	Users
+Vijay	Kumar	vkumar	P@ssw0rd!	Users
+Kavitha	Rajendran	krajendran	P@ssw0rd!	Users
+Suresh	Chandran	schandran	P@ssw0rd!	Users
+Meena	Pathmanathan	mpathmanathan	P@ssw0rd!	Users
+Arjun	Sivarajah	asivarajah	P@ssw0rd!	Users
+<img width="401" height="505" alt="image" src="https://github.com/user-attachments/assets/76b48770-ab9e-4ed8-9db4-df148472b16b" />
+
 ```
 
 #### Step 3.3: Run Bulk User Import Script
