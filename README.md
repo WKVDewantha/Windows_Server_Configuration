@@ -157,7 +157,7 @@ Import-Csv "C:\Exam\SalesUsers.csv" | ForEach-Object {
 5. Configure:
    - **Minimum password length:** `8 characters`
    - **Password must meet complexity requirements:** `Enabled`
-   - **Maximum password age:** `90 days` (adjust as needed)
+   - **Lockout threshold:* `3 attempts` | **Duration:** `30 mins`
 
 #### Step 4.2: Create UNI Security GPO
 1. In Group Policy Management, right-click **Group Policy Objects** → **New**
