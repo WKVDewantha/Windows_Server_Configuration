@@ -348,7 +348,3 @@ For each department folder:
 - Ensure firewall allows file sharing
 - Test with UNC path: `\\UNI-SRV01\ShareName`
 
-
-**Created for:** Windows Server 2022 Practice Lab  
-**Domain:** univotech.local  
-**Last Updated:** 2025
