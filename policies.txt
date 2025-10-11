@@ -1,0 +1,40 @@
+Step 4.1: Configure Password Policy
+
+Open Group Policy Management (Run gpmc.msc)
+Expand Forest → Domains → univotech.local
+Right-click Default Domain Policy → Edit
+Navigate to: Computer Configuration → Policies → Windows Settings → Security Settings → Account Policies → Password Policy
+
+Configure:
+Minimum password length: 8 characters
+Password must meet complexity requirements: Enabled
+*Lockout threshold: 3 attempts | Duration: 30 mins
+
+Step 4.2: Create UNI Security GPO
+In Group Policy Management, right-click Group Policy Objects → New
+Name it: UNI Security GPO
+Right-click the new GPO → Edit
+
+Configure the following settings:
+
+Disable Guest Account
+Computer Configuration → Policies → Windows Settings → Security Settings → Local Policies → Security Options
+Find: Accounts: Guest account status
+Set to: Disabled
+
+USB Lock (Disable Removable Storage)
+Computer Configuration → Policies → Administrative Templates → System → Removable Storage Access
+Find: All Removable Storage classes: Deny all access
+Set to: Enabled
+
+Disable Control Panel
+User Configuration → Policies → Administrative Templates → Control Panel
+Find: Prohibit access to Control Panel and PC settings
+Set to: Enabled
+
+Enforce Desktop Wallpaper
+User Configuration → Policies → Administrative Templates → Desktop → Desktop
+Find: Desktop Wallpaper
+Set to: Enabled
+
+Specify wallpaper path (e.g., C:\Wallpapers\company_logo.jpg)
