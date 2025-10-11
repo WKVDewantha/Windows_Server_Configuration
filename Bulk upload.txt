@@ -1,6 +1,11 @@
-Import-Csv "MarketingUsers.csv" | ForEach-Object {
-    $OUPath = "OU=$($_.OU),OU=Finance,DC=bishtest,DC=test"
-    $UserPrincipalName = "$($_.Username)@bishtest.test"
+# Updated script for univotech.local domain
+Import-Csv "C:\Exam\SalesUsers.csv" | ForEach-Object {
+    # Define the target OU path
+    $OUPath = "OU=Sales,OU=UNIVOTECH,DC=univotech,DC=local"
+    
+    # Define the User Principal Name
+    $UserPrincipalName = "$($_.Username)@univotech.local"
+    
     New-ADUser `
         -Name "$($_.FirstName) $($_.LastName)" `
         -GivenName $_.FirstName `
