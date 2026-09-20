@@ -348,3 +348,8 @@ For each department folder:
 - Ensure firewall allows file sharing
 - Test with UNC path: `\\UNI-SRV01\ShareName`
 
+---
+
+If this repo/project helped you, consider buying me a coffee!
+
+<a href="https://www.buymeacoffee.com/mr_alex"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="41" width="174"></a>
